@@ -343,7 +343,7 @@ main a:not([class]) {
   row-gap: 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(0.825rem, 0.45rem + 1.05vw, 1.275rem); /* +50% */
+  font-size: clamp(0.55rem, 0.3rem + 0.7vw, 0.85rem);
   letter-spacing: 0.02em;
   white-space: nowrap;
   line-height: 1;
