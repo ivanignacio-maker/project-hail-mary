@@ -6,7 +6,7 @@ Un sitio web tributo no oficial (fan-made) dedicado a la novela de ciencia ficci
 
 El proyecto fue desarrollado centrándose en el rendimiento, la accesibilidad y el diseño responsivo (Mobile First), utilizando tecnologías web nativas sin depender de frameworks pesados.
 
-* **Diseño 100% Responsivo:** Interfaz fluida que se adapta perfectamente a dispositivos móviles, tablets y monitores grandes utilizando funciones avanzadas de CSS (Grid, Flexbox y tipografía fluida con `clamp()`).
+* **Diseño 100% Responsivo:** Interfaz fluida que se adapta perfectamente a dispositivos móviles, tablets y monitores grandes utilizando funciones avanzadas de CSS (Grid, Flexbox y tipografía fluida con `clamp()`). *Nota técnica: El efecto visual de desenfoque (blur) se desactiva en la versión móvil para garantizar una experiencia de usuario fluida y evitar caídas de fotogramas.*
 * **Formulario de Contacto Funcional:** Validación personalizada del lado del cliente mediante Vanilla JavaScript y envío real de correos de forma asíncrona (sin recargar la página) integrado con la API de **Formspree**.
 * **Galería Interactiva (Lightbox & Carrusel):** Sistema de visualización de imágenes personalizado desarrollado en JavaScript puro. Incluye navegación por flechas, cierre con teclado (Escape) y un sistema de zoom dinámico.
 * **Componentes Interactivos:** 
