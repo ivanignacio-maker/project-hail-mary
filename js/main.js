@@ -233,21 +233,50 @@ function initContactForm() {
     }
 
     // -----------------------------------------------------
-    // ACÁ es donde, el día de mañana, se conectaría un backend
-    // real (por ejemplo con fetch() a tu propia API, o a un
-    // servicio de formularios como Formspree). Como todavía no
-    // hay ningún servidor conectado, por ahora solo mostramos
-    // Si llegamos hasta acá, no hubo errores
-    // y podemos mostrar el estado de éxito simulado
+    // INTEGRACIÓN CON FORMSPREE
     // -----------------------------------------------------
-    mostrarEstado(
-      status,
-      'success',
-      '¡Listo! Tu mensaje ha sido enviado correctamente.'
-    );
-    form.reset();
-    campos.forEach(({ input }) => marcarValidez(input, true));
-    terminosRow.classList.remove('form__row--invalid');
+    // 1. Ve a formspree.io, crea una cuenta y un formulario nuevo.
+    // 2. Copia la URL que te dan (se ve como https://formspree.io/f/abcde).
+    // 3. Pégala aquí abajo entre las comillas:
+    const formspreeURL = "https://formspree.io/f/xaenoanl";
+
+    // Mostramos estado de "Enviando..." temporalmente
+    mostrarEstado(status, 'success', 'Enviando mensaje...');
+
+    if (formspreeURL === "TU_ENDPOINT_AQUI") {
+      // Modo de prueba para que siga funcionando visualmente hasta que pongas tu link
+      setTimeout(() => {
+        mostrarEstado(status, 'success', '¡Formulario válido! (Falta configurar el enlace de Formspree para que llegue el mail).');
+        form.reset();
+        campos.forEach(({ input }) => marcarValidez(input, true));
+        terminosRow.classList.remove('form__row--invalid');
+      }, 800);
+      return;
+    }
+
+    // Si ya pusiste la URL, hacemos el envío real con fetch:
+    const data = new FormData(form);
+    
+    fetch(formspreeURL, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        mostrarEstado(status, 'success', '¡Listo! Tu mensaje ha sido enviado correctamente.');
+        form.reset();
+        campos.forEach(({ input }) => marcarValidez(input, true));
+        terminosRow.classList.remove('form__row--invalid');
+      } else {
+        mostrarEstado(status, 'error', 'Ups, hubo un problema al enviar el mensaje. Intenta más tarde.');
+      }
+    })
+    .catch(error => {
+      mostrarEstado(status, 'error', 'Error de conexión. Revisa tu internet e intenta nuevamente.');
+    });
   });
 
   // Además de validar al enviar, revalidamos cada campo apenas
