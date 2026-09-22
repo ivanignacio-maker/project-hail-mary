@@ -104,8 +104,12 @@ main.content-solid {
 }
 main.content-solid > *:not(.page-banner) {
   background-color: rgba(17, 3, 3, 0.4);
-  backdrop-filter: blur(2px);
   flex-grow: 1;
+}
+@media (min-width: 1024px) {
+  main.content-solid > *:not(.page-banner) {
+    backdrop-filter: blur(2px);
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -273,7 +277,6 @@ main a:not([class]) {
 .twinkle-star--glow.twinkle-star--petrova {
   background-color: var(--color-petrova);
   box-shadow: 0 0 12px 4px var(--color-petrova);
-  filter: blur(1px);
 }
 
 
