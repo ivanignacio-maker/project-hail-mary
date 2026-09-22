@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Hail Mary — Sitio tributo</title>
-  <meta name="description" content="Sitio tributo no oficial de Project Hail Mary (2026): sinopsis, personajes, reparto, curiosidades y galería.">
+  <title>Project Hail Mary â€” Sitio tributo</title>
+  <meta name="description" content="Sitio tributo no oficial de Project Hail Mary (2026): sinopsis, personajes, reparto, curiosidades y galerÃ­a.">
 
-  <!-- Tipografía Exo 2 desde Google Fonts, como pide la guía de estilo -->
+  <!-- TipografÃ­a Exo 2 desde Google Fonts, como pide la guÃ­a de estilo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/webp" href="img/iconos/logo.webp">
 
-  <!-- Font Awesome: solo para los íconos de redes sociales y los
-       de las tarjetas de Curiosidades (ver css/styles.css sección 14
-       y 11b). El resto de los íconos del sitio siguen siendo SVG
-       propios, para no depender de una librería externa más de lo
+  <!-- Font Awesome: solo para los Ã­conos de redes sociales y los
+       de las tarjetas de Curiosidades (ver css/styles.css secciÃ³n 14
+       y 11b). El resto de los Ã­conos del sitio siguen siendo SVG
+       propios, para no depender de una librerÃ­a externa mÃ¡s de lo
        necesario. -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -27,11 +27,11 @@
   <!-- Enlace de accesibilidad: solo se ve si alguien navega con el teclado -->
   <a class="skip-link" href="#main">Saltar al contenido principal</a>
 
-  <!-- ============ HEADER Y NAVEGACIÓN ============
+  <!-- ============ HEADER Y NAVEGACIÃ“N ============
        Este bloque (header + nav + footer + script) se repite
-       igual en las 7 páginas del sitio, cambiando solo qué
+       igual en las 7 pÃ¡ginas del sitio, cambiando solo quÃ©
        link lleva aria-current="page". Es la forma de mantener
-       la misma identidad y navegación en todo el sitio. -->
+       la misma identidad y navegaciÃ³n en todo el sitio. -->
   <header class="site-header">
     <div class="container header-inner">
       <h1 class="logo-heading" style="display: contents;"><a href="index.html" class="logo"><img src="img/iconos/logo.webp" alt="" class="logo__badge">PROJECT <span>HAIL MARY</span></a></h1>
@@ -40,15 +40,15 @@
         <span class="menu-toggle__bar"></span>
         <span class="menu-toggle__bar"></span>
         <span class="menu-toggle__bar"></span>
-        <span class="visually-hidden">Abrir menú de navegación</span>
+        <span class="visually-hidden">Abrir menÃº de navegaciÃ³n</span>
       </button>
 
-      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <nav class="main-nav" id="main-nav" aria-label="NavegaciÃ³n principal">
         <ul class="nav-list">
           <li><a href="index.html" class="nav-link" aria-current="page">Inicio</a></li>
           <li class="nav-item--dropdown">
             <button class="nav-link dropdown-toggle" id="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-menu">
-              Archivo de la misión
+              Archivo de la misiÃ³n
               <svg class="dropdown-toggle__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -58,14 +58,14 @@
                 <li><a href="personajes.html">Personajes</a></li>
                 <li><a href="reparto.html">Reparto</a></li>
                 <li><a href="curiosidades.html">Curiosidades</a></li>
-                <li><a href="quiz.html">¿Qué personaje sos?</a></li>
+                <li><a href="quiz.html">Â¿QuÃ© personaje sos?</a></li>
               </ul>
             </div>
           </li>
           <li><a href="nave.html" class="nav-link">Nave Hail Mary</a></li>
           <li><a href="blip-a.html" class="nav-link">Blip-A</a></li>
-          <li><a href="astrofagos.html" class="nav-link">Astrófagos</a></li>
-          <li><a href="galeria.html" class="nav-link">Galería</a></li>
+          <li><a href="astrofagos.html" class="nav-link">AstrÃ³fagos</a></li>
+          <li><a href="galeria.html" class="nav-link">GalerÃ­a</a></li>
           <li><a href="contacto.html" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
@@ -73,14 +73,14 @@
   </header>
 
   <main id="main" class="starfield">
-    <!-- Señal luminosa de fondo: un trazado SVG curvo que cruza
+    <!-- SeÃ±al luminosa de fondo: un trazado SVG curvo que cruza
          el centro del Hero de arriba hacia abajo, hasta un punto
          brillante (la "estrella"). Se dibuja DOS veces con la
          misma forma (mismo "d"): una capa gruesa y difuminada
          para el resplandor, y una capa fina y clara encima para
-         el "núcleo" brillante — el mismo truco que usan los
-         carteles de neón en CSS. Ver .signal-arc en
-         css/styles.css sección 7.1 -->
+         el "nÃºcleo" brillante â€” el mismo truco que usan los
+         carteles de neÃ³n en CSS. Ver .signal-arc en
+         css/styles.css secciÃ³n 7.1 -->
     <!-- Contenedor del arco y la punta del cometa -->
     <div class="signal-arc-wrapper" aria-hidden="true">
       <svg class="signal-arc" viewBox="0 0 1000 640" preserveAspectRatio="none">
@@ -102,25 +102,25 @@
       <div class="container hero__inner">
         <div class="hero__content">
           <h2 class="hero__title">Grace Rocky <br><span class="hero__title-accent">saves stars.</span></h2>
-          <p class="hero__intro">Un profesor de ciencias se despierta solo, a 11,9 años luz de casa, sin memoria y con una sola misión: encontrar la forma de salvar al Sol antes de que la Tierra se quede sin luz.</p>
+          <p class="hero__intro">Un profesor de ciencias se despierta solo, a 11,9 aÃ±os luz de casa, sin memoria y con una sola misiÃ³n: encontrar la forma de salvar al Sol antes de que la Tierra se quede sin luz.</p>
 
           <!-- Sinopsis extendida, plegada por defecto. Mismo
-               mecanismo que el "Leer más" de Personajes/Reparto
-               (toggleOpenState en main.js): el botón agrega/quita
-               data-expanded="true" acá arriba, y el CSS hace el
-               resto (ver css/styles.css sección 7.1b). -->
+               mecanismo que el "Leer mÃ¡s" de Personajes/Reparto
+               (toggleOpenState en main.js): el botÃ³n agrega/quita
+               data-expanded="true" acÃ¡ arriba, y el CSS hace el
+               resto (ver css/styles.css secciÃ³n 7.1b). -->
           <div class="hero__synopsis" data-expanded="false">
             <div class="hero__synopsis-full" id="hero-synopsis-full">
               <div class="hero__synopsis-full-inner">
                 <div class="prose">
                   <h3>Un sol que se apaga</h3>
-                  <p>Años atrás, los astrónomos detectaron que el Sol estaba perdiendo energía a un ritmo alarmante, producto de un microorganismo extraterrestre bautizado <strong>Astrophage</strong>. Si nadie encuentra una solución, el planeta se enfría y la vida tal como la conocemos se termina. Frente a esa amenaza, un grupo internacional reúne recursos, ciencia y desesperación para construir la <strong>Hail Mary</strong>: una nave de un solo viaje hacia otra estrella que, misteriosamente, no está siendo afectada.</p>
+                  <p>AÃ±os atrÃ¡s, los astrÃ³nomos detectaron que el Sol estaba perdiendo energÃ­a a un ritmo alarmante, producto de un microorganismo extraterrestre bautizado <strong>Astrophage</strong>. Si nadie encuentra una soluciÃ³n, el planeta se enfrÃ­a y la vida tal como la conocemos se termina. Frente a esa amenaza, un grupo internacional reÃºne recursos, ciencia y desesperaciÃ³n para construir la <strong>Hail Mary</strong>: una nave de un solo viaje hacia otra estrella que, misteriosamente, no estÃ¡ siendo afectada.</p>
 
                   <h3>Un aliado inesperado</h3>
-                  <p><strong>Grace</strong> no está solo. En el otro extremo del sistema estelar se cruza con <strong>Rocky</strong>, un ingeniero alienígena que enfrenta exactamente el mismo problema con su propio sol. Sin idioma en común al principio, ambos empiezan a comunicarse a base de ensayo, error y música —y de ahí nace una de las amistades más particulares de la ciencia ficción reciente.</p>
+                  <p><strong>Grace</strong> no estÃ¡ solo. En el otro extremo del sistema estelar se cruza con <strong>Rocky</strong>, un ingeniero alienÃ­gena que enfrenta exactamente el mismo problema con su propio sol. Sin idioma en comÃºn al principio, ambos empiezan a comunicarse a base de ensayo, error y mÃºsica â€”y de ahÃ­ nace una de las amistades mÃ¡s particulares de la ciencia ficciÃ³n reciente.</p>
 
                   <h3>Contra el reloj</h3>
-                  <p>Con recursos limitados, sin el resto de la tripulación original y con la Tierra observando desde una distancia imposible de acortar, <strong>Grace</strong> tiene que apoyarse en su formación científica —y en <strong>Rocky</strong>— para encontrar una respuesta antes de que se acabe el tiempo.</p>
+                  <p>Con recursos limitados, sin el resto de la tripulaciÃ³n original y con la Tierra observando desde una distancia imposible de acortar, <strong>Grace</strong> tiene que apoyarse en su formaciÃ³n cientÃ­fica â€”y en <strong>Rocky</strong>â€” para encontrar una respuesta antes de que se acabe el tiempo.</p>
                 </div>
               </div>
             </div>
@@ -135,19 +135,19 @@
         </div>
 
         <div class="hero__visual">
-           <!--Resplandor animado detrás del afiche: es el único
-               elemento del sitio con una animación "automática",
-               a propósito, para no sobrecargar la página. -->
+           <!--Resplandor animado detrÃ¡s del afiche: es el Ãºnico
+               elemento del sitio con una animaciÃ³n "automÃ¡tica",
+               a propÃ³sito, para no sobrecargar la pÃ¡gina. -->
           <div class="hero__poster-glow" aria-hidden="true"></div>
 
-          <!-- Widget del afiche: carrusel automático + panel de
-               información que se despliega con la flecha del
-               borde izquierdo. Los dos viven acá adentro porque
+          <!-- Widget del afiche: carrusel automÃ¡tico + panel de
+               informaciÃ³n que se despliega con la flecha del
+               borde izquierdo. Los dos viven acÃ¡ adentro porque
                comparten el mismo espacio (ver css/styles.css,
-               sección 5b, y la función initPosterWidget en
+               secciÃ³n 5b, y la funciÃ³n initPosterWidget en
                main.js). -->
           <div class="poster-widget" id="poster-widget">
-            <button class="poster-widget__handle" type="button" aria-expanded="false" aria-controls="poster-info-panel" aria-label="Ver información de la película">
+            <button class="poster-widget__handle" type="button" aria-expanded="false" aria-controls="poster-info-panel" aria-label="Ver informaciÃ³n de la pelÃ­cula">
               <svg class="poster-widget__handle-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path d="M10 3l-5 5 5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -156,14 +156,14 @@
             <div class="hero__poster-frame">
               <div class="poster-carousel" id="poster-carousel">
                 <img class="poster-carousel__slide is-active" src="img/hero/poster.webp" alt="Afiche oficial de Project Hail Mary" width="600" height="900">
-                <img class="poster-carousel__slide" src="img/hero/poster-alt-3.webp" alt="Afiche oficial de Project Hail Mary — versión IMAX 70mm" loading="lazy">
-                <img class="poster-carousel__slide" src="img/hero/poster-alt-4.webp" alt="Afiche oficial de Project Hail Mary — versión 4DX" loading="lazy">
-                <img class="poster-carousel__slide" src="img/hero/poster-alt-5.webp" alt="Afiche oficial de Project Hail Mary — versión internacional" loading="lazy">
+                <img class="poster-carousel__slide" src="img/hero/poster-alt-3.webp" alt="Afiche oficial de Project Hail Mary â€” versiÃ³n IMAX 70mm" loading="lazy">
+                <img class="poster-carousel__slide" src="img/hero/poster-alt-4.webp" alt="Afiche oficial de Project Hail Mary â€” versiÃ³n 4DX" loading="lazy">
+                <img class="poster-carousel__slide" src="img/hero/poster-alt-5.webp" alt="Afiche oficial de Project Hail Mary â€” versiÃ³n internacional" loading="lazy">
               </div>
             </div>
 
             <div class="poster-widget__panel" id="poster-info-panel">
-              <p class="poster-widget__panel-title">Ficha de la película</p>
+              <p class="poster-widget__panel-title">Ficha de la pelÃ­cula</p>
               <dl class="poster-info">
                 <div class="poster-info__item">
                   <dt><i class="fa-brands fa-imdb" aria-hidden="true"></i> IMDb</dt>
@@ -174,7 +174,7 @@
                   <dd>4.3 / 5</dd>
                 </div>
                 <div class="poster-info__item">
-                  <dt><i class="fa-regular fa-clock" aria-hidden="true"></i> Duración</dt>
+                  <dt><i class="fa-regular fa-clock" aria-hidden="true"></i> DuraciÃ³n</dt>
                   <dd>2 h 36 min</dd>
                 </div>
                 <div class="poster-info__item">
@@ -184,7 +184,7 @@
               </dl>
               <ul class="poster-info__tags">
                 <li>Drama</li>
-                <li>Ciencia ficción</li>
+                <li>Ciencia ficciÃ³n</li>
                 <li>Thriller</li>
               </ul>
             </div>
@@ -193,41 +193,41 @@
       </div>
     </section>
 
-    <!-- ============ TRÁILER ============ -->
+    <!-- ============ TRÃILER ============ -->
     <section class="trailer">
       <div class="container">
         <div class="section-heading">
-          <h2 class="heading-mark">Mirá el tráiler</h2>
-          <p class="section-heading__text">Tráiler oficial publicado por Amazon MGM Studios.</p>
+          <h2 class="heading-mark">MirÃ¡ el trÃ¡iler</h2>
+          <p class="section-heading__text">TrÃ¡iler oficial publicado por Amazon MGM Studios.</p>
         </div>
 
-        <!-- Contenedor con proporción 16:9 fija: el iframe se
-             estira dentro sin deformarse en ningún tamaño de
-             pantalla (ver comentario en css/styles.css, sección 6). -->
+        <!-- Contenedor con proporciÃ³n 16:9 fija: el iframe se
+             estira dentro sin deformarse en ningÃºn tamaÃ±o de
+             pantalla (ver comentario en css/styles.css, secciÃ³n 6). -->
         <div class="trailer__frame">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/5VYsnngkS_U?si=FSV9WULi2g3EPHHR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </section>
 
-    <!-- ============ ACCESOS RÁPIDOS ============ -->
+    <!-- ============ ACCESOS RÃPIDOS ============ -->
     <section class="quick-access">
       <div class="container">
         <div class="section-heading">
-          <h2 class="heading-mark">Explorá la misión</h2>
+          <h2 class="heading-mark">ExplorÃ¡ la misiÃ³n</h2>
           <p class="section-heading__text">Todo lo que hay para descubrir en este sitio.</p>
         </div>
 
         <div class="quick-access__grid">
           <a href="personajes.html" class="quick-access__card">
             <h3 class="quick-access__card-title">Personajes</h3>
-            <p class="quick-access__card-text">Grace, Rocky y el resto de la tripulación.</p>
-            <span class="quick-access__card-link">Conocer a la tripulación</span>
+            <p class="quick-access__card-text">Grace, Rocky y el resto de la tripulaciÃ³n.</p>
+            <span class="quick-access__card-link">Conocer a la tripulaciÃ³n</span>
           </a>
 
           <a href="reparto.html" class="quick-access__card">
             <h3 class="quick-access__card-title">Reparto</h3>
-            <p class="quick-access__card-text">Quién le pone cara —y voz— a cada personaje.</p>
+            <p class="quick-access__card-text">QuiÃ©n le pone cara â€”y vozâ€” a cada personaje.</p>
             <span class="quick-access__card-link">Ver el reparto</span>
           </a>
 
@@ -238,14 +238,14 @@
           </a>
 
           <a href="galeria.html" class="quick-access__card">
-            <h3 class="quick-access__card-title">Galería</h3>
-            <p class="quick-access__card-text">Arte conceptual y detrás de escena.</p>
-            <span class="quick-access__card-link">Explorar la galería</span>
+            <h3 class="quick-access__card-title">GalerÃ­a</h3>
+            <p class="quick-access__card-text">Arte conceptual y detrÃ¡s de escena.</p>
+            <span class="quick-access__card-link">Explorar la galerÃ­a</span>
           </a>
 
           <a href="contacto.html" class="quick-access__card">
             <h3 class="quick-access__card-title">Contacto</h3>
-            <p class="quick-access__card-text">¿Encontraste un error o querés sumar algo?</p>
+            <p class="quick-access__card-text">Â¿Encontraste un error o querÃ©s sumar algo?</p>
             <span class="quick-access__card-link">Enviar un mensaje</span>
           </a>
         </div>
@@ -259,27 +259,27 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <p class="footer-logo">PROJECT <span>HAIL MARY</span></p>
-        <p class="footer-tagline">Sitio tributo no oficial, hecho por un fan. Inspirado en la novela de Andy Weir y su adaptación al cine.</p>
+        <p class="footer-tagline">Sitio tributo no oficial, hecho por un fan. Inspirado en la novela de Andy Weir y su adaptaciÃ³n al cine.</p>
       </div>
 
-      <nav class="footer-nav" aria-label="Navegación secundaria">
+      <nav class="footer-nav" aria-label="NavegaciÃ³n secundaria">
         <h4 class="footer-nav__title">Mapa de sitio</h4>
         <ul class="footer-nav__links">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="personajes.html">Personajes</a></li>
           <li><a href="reparto.html">Reparto</a></li>
           <li><a href="curiosidades.html">Curiosidades</a></li>
-          <li><a href="quiz.html">¿Qué personaje sos?</a></li>
+          <li><a href="quiz.html">Â¿QuÃ© personaje sos?</a></li>
           <li><a href="nave.html">Nave Hail Mary</a></li>
           <li><a href="blip-a.html">Blip-A</a></li>
-          <li><a href="astrofagos.html">Astrófagos</a></li>
-          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="astrofagos.html">AstrÃ³fagos</a></li>
+          <li><a href="galeria.html">GalerÃ­a</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
 
       <div class="footer-social">
-        <p>Seguí la misión</p>
+        <p>SeguÃ­ la misiÃ³n</p>
         <div class="social-links">
           <a href="#" class="social-links__link" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
           <a href="#" class="social-links__link" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
@@ -290,7 +290,7 @@
     </div>
 
     <div class="container footer-bottom">
-      <p>&copy; 2026 Sitio tributo de Project Hail Mary. La película y la novela pertenecen a sus respectivos autores, estudios y editoriales — este es un proyecto de fan, sin fines de lucro.</p>
+      <p>&copy; 2026 Sitio tributo de Project Hail Mary. La pelÃ­cula y la novela pertenecen a sus respectivos autores, estudios y editoriales â€” este es un proyecto de fan, sin fines de lucro.</p>
     </div>
   </footer>
 
