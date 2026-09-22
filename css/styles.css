@@ -596,6 +596,7 @@ main a:not([class]) {
 }
 
 .hero__title {
+  font-size: clamp(1.1rem, 0.7rem + 2.5vw, 2rem);
   margin-bottom: var(--space-sm);
 }
 .hero__title .hero__title-accent {
