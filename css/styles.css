@@ -341,7 +341,7 @@ main a:not([class]) {
   row-gap: 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(0.55rem, 0.3rem + 0.7vw, 0.85rem);
+  font-size: clamp(0.825rem, 0.45rem + 1.05vw, 1.275rem); /* +50% */
   letter-spacing: 0.02em;
   white-space: nowrap;
   line-height: 1;
@@ -349,8 +349,8 @@ main a:not([class]) {
 .logo__badge {
   grid-column: 1;
   grid-row: 1 / span 2;
-  width: 34px;
-  height: 34px;
+  width: 51px; /* +50% (antes 34px) */
+  height: 51px; /* +50% (antes 34px) */
   object-fit: contain;
 }
 .logo span {
