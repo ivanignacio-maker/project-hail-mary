@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada — Project Hail Mary</title>
+  <meta name="description" content="Error 404: Página no encontrada en el sitio tributo de Project Hail Mary.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="img/iconos/favicon.svg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <style>
+    .not-found-section {
+      text-align: center;
+      padding-block: 8rem 4rem;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .not-found-title {
+      font-size: 3.5rem;
+      margin-bottom: var(--space-md);
+      color: var(--color-petrova);
+    }
+    .not-found-text {
+      font-size: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto var(--space-lg);
+    }
+    .not-found-desc {
+      color: var(--color-text-dim);
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="img/iconos/logo.webp" alt="" class="logo__badge">PROJECT <span>HAIL MARY</span></a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="visually-hidden">Abrir menú de navegación</span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item--dropdown">
+            <button class="nav-link dropdown-toggle" id="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-menu">
+              Archivo de la misión
+              <svg class="dropdown-toggle__chevron" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-panel" id="dropdown-menu">
+              <ul class="dropdown-list">
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="reparto.html">Reparto</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="quiz.html">¿Qué personaje sos?</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="nave.html" class="nav-link">Nave Hail Mary</a></li>
+          <li><a href="blip-a.html" class="nav-link">Blip-A</a></li>
+          <li><a href="astrofagos.html" class="nav-link">Astrófagos</a></li>
+          <li><a href="galeria.html" class="nav-link">Galería</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="content-solid">
+
+    <section class="page-banner starfield not-found-section">
+      <div class="container">
+        <img src="img/rocky-404.webp" alt="Rocky diciendo Error 404" style="max-width: 350px; margin: 0 auto 2rem; display: block; mix-blend-mode: screen; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));">
+        <h1 class="heading-mark not-found-title" style="margin: 0 auto 1.5rem; display: inline-block;">¡ERROR! ¡ERROR!</h1>
+        <p class="not-found-text">
+          Humano estúpido... ¡Esta página no existe!
+        </p>
+        <p class="not-found-desc">
+          O sufriste de amnesia retrógrada prolongada, o este enlace fue devorado por un Astrófago. De cualquier manera, te perdiste a 11,9 años luz de casa.
+        </p>
+        <a href="index.html" class="btn btn-primary">
+          VOLVER A LA TIERRA (INICIO)
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer starfield">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">PROJECT <span>HAIL MARY</span></p>
+        <p class="footer-tagline">Sitio tributo no oficial, hecho por un fan. Inspirado en la novela de Andy Weir y su adaptación al cine.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navegación secundaria">
+        <h4 class="footer-nav__title">Mapa de sitio</h4>
+        <ul class="footer-nav__links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="reparto.html">Reparto</a></li>
+          <li><a href="curiosidades.html">Curiosidades</a></li>
+          <li><a href="quiz.html">¿Qué personaje sos?</a></li>
+          <li><a href="nave.html">Nave Hail Mary</a></li>
+          <li><a href="blip-a.html">Blip-A</a></li>
+          <li><a href="astrofagos.html">Astrófagos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <p>Seguí la misión</p>
+        <div class="social-links">
+          <a href="#" class="social-links__link" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="social-links__link" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="social-links__link" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        </div>
+        <a href="mailto:contacto@hailmary-tributo.com" class="footer-email">contacto@hailmary-tributo.com</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Sitio tributo de Project Hail Mary. La película y la novela pertenecen a sus respectivos autores, estudios y editoriales — este es un proyecto de fan, sin fines de lucro.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

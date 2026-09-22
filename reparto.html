@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reparto - Project Hail Mary</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/badge.webp" alt="Insignia del Proyecto Hail Mary" class="logo__badge" width="48" height="48">
+        Project <span>Hail Mary</span>
+      </a>
+
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item nav-item--dropdown">
+            <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="dropdown-archivo">
+              Archivo de la misión
+              <svg class="dropdown-toggle__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="dropdown-panel" id="dropdown-archivo">
+              <div class="dropdown-list">
+                <a href="personajes.html">Personajes</a>
+                <a href="reparto.html" aria-current="page">Reparto</a>
+                <a href="curiosidades.html">Curiosidades</a>
+                <a href="quiz.html">Quiz interactivo</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="nave.html" class="nav-link">Nave Hail Mary</a></li>
+          <li class="nav-item"><a href="blip-a.html" class="nav-link">Blip-A</a></li>
+          <li class="nav-item"><a href="astrofagos.html" class="nav-link">Astrófagos</a></li>
+          <li class="nav-item"><a href="galeria.html" class="nav-link">Galería</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="content-solid">
+    <section class="page-banner starfield">
+      <div class="container">
+        <h1>Reparto</h1>
+        <p class="page-banner__text">Los talentos detrás de los tripulantes de la <strong>Hail Mary</strong>.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="profile-grid">
+        
+        <article class="profile-card">
+          <button class="gallery-item__button" type="button" data-full-image="img/reparto/gosling.webp" data-caption="Ryan Gosling">
+            <img class="profile-card__image" src="img/reparto/gosling.webp" alt="Ryan Gosling" width="480" height="600" loading="lazy">
+          </button>
+          <div class="profile-card__body">
+            <h3 class="profile-card__name">Ryan Gosling</h3>
+            <p class="profile-card__role">Interpreta a <strong>Ryland Grace</strong></p>
+            <p class="profile-card__desc">Actor nominado al Óscar por Barbie, La La Land y Half Nelson.</p>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <button class="gallery-item__button" type="button" data-full-image="img/reparto/ortiz.webp" data-caption="James Ortiz">
+            <img class="profile-card__image" src="img/reparto/ortiz.webp" alt="James Ortiz" width="480" height="600" loading="lazy">
+          </button>
+          <div class="profile-card__body">
+            <h3 class="profile-card__name">James Ortiz</h3>
+            <p class="profile-card__role">Presta su voz y movimiento a <strong>Rocky</strong>.</p>
+            <p class="profile-card__desc">Artista de teatro y titiritero, aporta su experiencia para darle vida a Rocky.</p>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <button class="gallery-item__button" type="button" data-full-image="img/reparto/huller.webp" data-caption="Sandra Hüller">
+            <img class="profile-card__image" src="img/reparto/huller.webp" alt="Sandra Hüller" width="480" height="600" loading="lazy">
+          </button>
+          <div class="profile-card__body">
+            <h3 class="profile-card__name">Sandra Hüller</h3>
+            <p class="profile-card__role">Interpreta a Eva Stratt</p>
+            <p class="profile-card__desc">Actriz nominada al Óscar por Anatomía de una caída.</p>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <button class="gallery-item__button" type="button" data-full-image="img/reparto/leung.webp" data-caption="Ken Leung">
+            <img class="profile-card__image" src="img/reparto/leung.webp" alt="Ken Leung" width="480" height="600" loading="lazy">
+          </button>
+          <div class="profile-card__body">
+            <h3 class="profile-card__name">Ken Leung</h3>
+            <p class="profile-card__role">Rol secundario</p>
+            <p class="profile-card__desc">Conocido por su participación en Lost y Avatar: The Last Airbender.</p>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <button class="gallery-item__button" type="button" data-full-image="img/reparto/vayntrub.webp" data-caption="Milana Vayntrub">
+            <img class="profile-card__image" src="img/reparto/vayntrub.webp" alt="Milana Vayntrub" width="480" height="600" loading="lazy">
+          </button>
+          <div class="profile-card__body">
+            <h3 class="profile-card__name">Milana Vayntrub</h3>
+            <p class="profile-card__role">Rol secundario</p>
+            <p class="profile-card__desc">Actriz y comediante.</p>
+          </div>
+        </article>
+
+        <article class="profile-card">
+          <button class="gallery-item__button" type="button" data-full-image="img/reparto/boyce.webp" data-caption="Lionel Boyce">
+            <img class="profile-card__image" src="img/reparto/boyce.webp" alt="Lionel Boyce" width="480" height="600" loading="lazy">
+          </button>
+          <div class="profile-card__body">
+            <h3 class="profile-card__name">Lionel Boyce</h3>
+            <p class="profile-card__role">Rol secundario</p>
+            <p class="profile-card__desc">Actor y productor, conocido por The Bear.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer starfield">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Project <span>Hail Mary</span></div>
+        <p class="footer-tagline">El futuro de la humanidad pende de un hilo.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <h4 class="footer-nav__title">Mapa de sitio</h4>
+        <div class="footer-nav__links">
+          <a href="index.html">Inicio</a>
+          <a href="personajes.html">Personajes</a>
+          <a href="reparto.html">Reparto</a>
+          <a href="nave.html">La Nave</a>
+          <a href="blip-a.html">Blip-A</a>
+          <a href="astrofagos.html">Astrófagos</a>
+          <a href="galeria.html">Galería</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </nav>
+
+      <div class="footer-social">
+        <p>Seguí la misión</p>
+        <div class="social-links">
+          <a href="#" class="social-links__link" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-links__link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-links__link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <a href="mailto:transmision@projecthailmary.com" class="footer-email">transmision@projecthailmary.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Project Hail Mary. Sitio no oficial de fans. Propiedad de MGM.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen completa">
+    <div class="lightbox__content">
+      <button class="lightbox__close" type="button" aria-label="Cerrar visor">&times;</button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Imagen anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Imagen siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <img src="" alt="" class="lightbox__image" id="lightbox-image">
+      <div class="lightbox__caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* =========================================================
+   MODERN CSS RESET — Project Hail Mary
+   ---------------------------------------------------------
+   Este archivo SOLO nivela las diferencias entre navegadores.
+   No define ningún color, tipografía ni tamaño "de diseño":
+   eso vive en styles.css. Cada regla tiene un comentario que
+   explica para qué sirve.
+   ========================================================= */
+
+/* 1. box-sizing: border-box en todo el documento.
+      Así, cuando definamos width + padding + border en un
+      elemento, el tamaño final NO se agranda: paddings y
+      bordes se descuentan del ancho declarado. Esto evita
+      un montón de dolores de cabeza con el responsive. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Quitamos el margin por defecto de TODOS los elementos
+      (h1, p, ul, figure, etc). Los navegadores traen márgenes
+      propios distintos entre sí; preferimos partir de cero y
+      definir nosotros el espaciado en styles.css. */
+* {
+  margin: 0;
+}
+
+/* 3. El body ocupa como mínimo toda la altura de la pantalla
+      (útil para que el footer no quede "flotando" en páginas
+      cortas) y usamos un interlineado cómodo para leer.
+      -webkit-font-smoothing mejora el renderizado de la
+      tipografía en pantallas de alta densidad. */
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Encabezados, botones, inputs, textarea y selects heredan
+      la tipografía del sitio en lugar de la fuente por
+      defecto del sistema operativo (que suele ser distinta
+      en cada navegador). */
+h1, h2, h3, h4, h5, h6,
+button, input, textarea, select {
+  font: inherit;
+}
+
+/* 5. Evita que palabras muy largas (URLs, emails) rompan el
+      diseño en pantallas angostas, forzando el corte de línea. */
+h1, h2, h3, h4, h5, h6, p {
+  overflow-wrap: break-word;
+}
+
+/* 6. Las listas <ul>/<ol> que tienen una clase (es decir, las
+      que usamos como componente: navegación, tarjetas, etc.)
+      pierden la viñeta y el padding por defecto. Mantenemos
+      las listas "de contenido" (sin clase) con su estilo
+      normal, porque siguen siendo semánticamente una lista. */
+ul[class], ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+/* 7. TODO el contenido multimedia es responsivo por defecto:
+      nunca se desborda de su contenedor. Esto es clave para
+      que la galería y las tarjetas no rompan el layout. */
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 8. Los inputs, botones, textarea y select heredan el color
+      de texto del elemento padre en vez del color por
+      defecto del navegador. */
+input, button, textarea, select {
+  color: inherit;
+}
+
+/* 9. Los enlaces no llevan subrayado ni color propio por
+      defecto: el estilo de los enlaces se decide a propósito
+      en cada componente dentro de styles.css. */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 10. Los botones pierden la apariencia nativa del navegador
+       (fondo gris, borde 3D) para poder diseñarlos libremente,
+       y el cursor deja claro que son interactivos. */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 11. HTML con scroll suave para los enlaces internos (por
+       ejemplo, saltar al formulario de contacto) y ajuste de
+       tamaño de texto consistente en móviles iOS. */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 12. Accesibilidad: si la persona configuró su sistema
+       operativo para reducir el movimiento, apagamos
+       animaciones y scroll suave casi por completo. Esto debe
+       ir DESPUÉS de la regla de scroll-behavior de arriba
+       para poder sobreescribirla. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
